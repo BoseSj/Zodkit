@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Zodkit}",
+            "name": "Debug Zodkit",
+            "target": "Zodkit",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug Zodkit"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:Zodkit}",
+            "name": "Release Zodkit",
+            "target": "Zodkit",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release Zodkit"
+        }
+    ]
+}
