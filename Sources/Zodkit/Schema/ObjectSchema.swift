@@ -16,9 +16,9 @@ public struct ObjectSchema<Object> {
     }
 
     public func apply(_ object: Object) throws -> Object {
-			try fields.reduce(object) { partialResult, element in
-				try element.apply(partialResult)
-			}
+        return try fields.reduce(object) { partialResult, element in
+            try element.apply(partialResult)
+        }
     }
 		
     public func validate(_ object: Object) throws {
