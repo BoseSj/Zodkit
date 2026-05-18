@@ -15,7 +15,10 @@ let package = Package(
 		.executableTarget(
             name: "Zodkit"
         ),
-
+        .testTarget(
+            name: "ZodkitTests",
+            dependencies: ["Zodkit"]
+        ),
     ],
     swiftLanguageModes: [.v6]
 )
